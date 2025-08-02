@@ -1,0 +1,53 @@
+<!--This html document is a mimic weather app made using simple CSS styles and JavaScript,
+    with integration of an open-source weather API called 'open meteo'-->
+<!--The weather app is named 'clime'-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale=1">
+      <title>clime >>></title>  
+      <link rel = "stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "typewriter">
+                <h1> GOOD DAY! :) </h1>
+            </div>
+
+            <h2> SELECT CITY ^_^ </h2>
+            
+            <div class = "grid">
+                <button onclick = "selectCity('Chennai')">CHENNAI</button>
+                <button onclick = "selectCity('Delhi')">DELHI</button>
+                <button onclick = "selectCity('Mumbai')">MUMBAI</button>
+                <button onclick = "selectCity('Bengaluru')">BENGALURU</button>
+                <button onclick = "selectCity('Pune')">PUNE</button>
+                <button onclick = "selectCity('Kolkata')">KOLKATA</button>
+            </div>
+
+            <footer>
+                <p>&copy VA 2025</p>
+            </footer>
+        </div>
+        
+        <div id="weather" class="weather-section">
+            <div class="weather-box">
+                <h2 id="city-name">city...</h2>
+                <div id="weather-icon">🌤️</div>
+                <div id="temperature">-- °C</div>
+                <div id="humidity">💧 --% humidity</div>
+                <div id="sunrise">🌅 Sunrise: --</div>
+                <div id="sunset">🌇 Sunset: --</div>
+                <div id="uv">🔆 UV Index: --</div>
+                <br>
+                <div id="quote" class="quote">"Weather is loading wisdom..."</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
